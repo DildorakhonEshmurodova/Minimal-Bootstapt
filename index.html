@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrapt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .navbar-link{
+            transition: 0.3s;
+            border-bottom: 2px solid white;
+        }
+        .navbar-link:hover{
+            border-bottom: 2px solid black;
+        }
+        .list-parag{
+            font-size: 12px;
+            line-height: 5px;
+            font-weight: bolder;
+        }
+        .link-icon{
+            /* width: 15px;
+            height: 15px; */
+            margin-bottom: 14px;
+            margin-right: 5px;
+        }
+        .address-img{
+            width: 40px; 
+            height: 50px; 
+            margin: 8px;
+        }
+        .icon-name{
+            font-size: 14px;
+            line-height: 8px;
+            font-weight: bolder;
+        }
+        .footer .container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+        .footer-form{
+          background-color: rgba(255, 255, 255, 0.18);
+          padding: 20px;
+          width: 400px;
+        }
+        .btn{
+            transition: 0.3s;
+            margin-left: 100px;
+        }
+        .btn:hover{
+            background-color: white;
+            color: blue;
+            transform: scale(0.8);
+            box-shadow: 2px 2px 3px black;
+        }
+        .contact-icon{
+            width: 15px;
+            height: 15px; 
+            margin: 5px;"
+        }
+        .contact-link{
+            transition: 0.3s;
+        }
+        .contact-link:hover{
+            transform: scale(0.9);
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="navbar pt-4">
+        <div class="container d-flex align-items-center">
+            <ul class="d-flex list-unstyled">
+                <li class=" d-flex align-items-center">
+                    <img class="" style="width: 50px; height: 50px; margin-right: 8px;" src="./minimal-img.png" alt="image">
+                    <h4>MINIMAL</h4>
+                </li>
+            </ul>
+            <ul class="d-flex list-unstyled">
+                <li class="" style="font-size: 18px;"><a href="#" class="navbar-link text-decoration-none" style="padding: 10px; color: black;">Process</a></li>
+                <li class="" style="font-size: 18px;"><a href="#" class="navbar-link text-decoration-none" style="padding: 10px; color: black;">Project</a></li>
+                <li class="" style="font-size: 18px;"><a href="#" class="navbar-link text-decoration-none" style="padding: 10px; color: black;">Team</a></li>
+                <li class="" style="font-size: 18px;"><a href="#" class="navbar-link text-decoration-none" style="padding: 10px; color: black;">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="container-fluid">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./carousel-pic.jpg" class="d-block" style="width: 100%; height: 350px;" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 35px;">Making brands stand out is our obsession</h5>
+              <p style="font-size: 25px;">Making brands stand out</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel-img.png" class="d-block" style="width: 100%; height: 350px;" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 35px;">Making brands stand out is our obsession</h5>
+              <p style="font-size: 25px;">Making brands stand out</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./carousel-img.png" class="d-block" style="width: 100%; height: 350px;" alt="image">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 style="font-size: 35px;">Making brands stand out is our obsession</h5>
+              <p style="font-size: 25px;">Making brands stand out</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+        </div>
+    </div>
+
+    <div class="description d-flex align-items-center" style="background-color: #FEFEC9;">
+        <div class="container text-center"  data-aos="zoom-in-up" data-aos-duration="2000">
+            <p class="text m-5" style="font-size: 18px;line-height: 30px;">
+                Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on design, consulting, technology, and photography. We’ve been building unique digital products, platforms, and experiences for the past 6 years. Let us help your company grow.
+            </p>
+            <button type="button" class="btn mb-5 mt-3" style="padding: 10px; background-color: #FEFEC9; color: black; border: 1px solid black; border-radius: 8px; box-shadow: 2px 2px 4px black;">Get in Touch</button>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <h3 class="heading text-center pt-5 pb-3" data-aos="fade-down" data-aos-duration="2000">How we make brands thrive</h3>
+
+            <div class="cards-body d-flex justify-content-center align-items-center text-center ">
+                <div class="cards" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card-top d-flex justify-content-center text-center align-items-center" style="background-color:#F5F5F5;margin: 30px 5px; width: 300px;">
+                        <img src="./target.png" class="card-img-top" style="width: 158px; height: 180px;" alt="image">
+                      </div>
+                      <div class="card-body text-center" style="width: 300px;">
+                        <h5 class="card-title">SET a target</h5>
+                        <p class="card-text" style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                      </div>
+                </div>
+                <div class="cards" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="card-top d-flex justify-content-center text-center align-items-center" style="background-color:#F5F5F5;margin: 30px 5px; width: 300px;">
+                        <img src="./target.png" class="card-img-top" style="width: 158px; height: 180px;" alt="image">
+                      </div>
+                      <div class="card-body text-center" style="width: 300px;">
+                        <h5 class="card-title">SET a target</h5>
+                        <p class="card-text" style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                      </div>
+                </div>
+                <div class="cards" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="card-top d-flex justify-content-center text-center align-items-center" style="background-color:#F5F5F5;margin: 30px 5px; width: 300px;">
+                        <img src="./target.png" class="card-img-top" style="width: 158px; height: 180px;" alt="image">
+                      </div>
+                      <div class="card-body text-center" style="width: 300px;">
+                        <h5 class="card-title">SET a target</h5>
+                        <p class="card-text" style="font-size: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <ul>
+            <li><img src="./IMAGE (1).png" alt="image"></li>
+            <li><p class="" style="font-size: 18px;">WOODS</p></li>
+            <li><p class="" style="font-size: 16px;"><i>Photography</i></p></li>
+        </ul>
+    </div> -->
+
+    <div class="" style="background-color: #F5F5F5;">
+        <div class="container">
+        <div class="d-flex align-items-center justify-content-center pt-5" data-aos="fade-down" data-aos-duration="2000">
+            <h2>Recent projects</h2>
+        </div>
+        <div  class="d-flex flex-wrap m-4 pt-4 justify-content-center align-items-center">
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+
+        <div class="card mb-5" data-aos="zoom-in" data-aos-duration="2000" style="width: 230px; height:340px; margin:8px; background-color: white;">
+            <img src="./IMAGE (1).png" class="card-img-top" alt="image">
+            <div class="card-body text-center">
+              <p>WOODS</p>
+              <p class="card-text"><i>Photography</i></p>
+            </div>
+        </div>
+       </div>
+    </div>
+    </div>
+
+    <div>
+        <div class="container">
+        <div class="d-flex align-items-center justify-content-center pt-5" data-aos="fade-down" data-aos-duration="2000">
+            <h2>Our team</h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+
+            <ul class="list-unstyled text-center mt-5 mb-5" data-aos="flip-up" data-aos-duration="500" style="width: 180px; margin:5px;">
+                <li><img style="width: 180px;" src="./IMAGE (2).png" alt="image"></li>
+                <li><p>Ron Swanson</p></li>
+                <li><p>Founder</p></li>
+                <li class="d-flex justify-content-center align-items-center" >
+                    <a class="contact-link" href="https://publish.twitter.com/.twitterlink"><img class="contact-icon" src="./twitter.png" alt="icon"></a>
+                    <a class="contact-link" href="https://in.linkedin.com/in/somebody"><img class="contact-icon" src="./n-icon.png" alt="icon"></a>
+                    <a class="contact-link" href="mailto:smb@gmail.com"><img class="contact-icon" src="./Mail_1_x2C__Envelope_1.png" alt="icon"></a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled text-center mt-5 mb-5" data-aos="flip-up" data-aos-duration="1000" style="width: 180px; margin:5px;">
+                <li><img style="width: 180px;" src="./IMAGE (2).png" alt="image"></li>
+                <li><p>Ron Swanson</p></li>
+                <li><p>Founder</p></li>
+                <li class="d-flex justify-content-center align-items-center" >
+                    <a class="contact-link" href="https://publish.twitter.com/.twitterlink"><img class="contact-icon" src="./twitter.png" alt="icon"></a>
+                    <a class="contact-link" href="https://in.linkedin.com/in/somebody"><img class="contact-icon" src="./n-icon.png" alt="icon"></a>
+                    <a class="contact-link" href="mailto:smb@gmail.com"><img class="contact-icon" src="./Mail_1_x2C__Envelope_1.png" alt="icon"></a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled text-center mt-5 mb-5" data-aos="flip-up" data-aos-duration="1500" style="width: 180px; margin:5px;">
+                <li><img style="width: 180px;" src="./IMAGE (2).png" alt="image"></li>
+                <li><p>Ron Swanson</p></li>
+                <li><p>Founder</p></li>
+                <li class="d-flex justify-content-center align-items-center" >
+                    <a class="contact-link" href="https://publish.twitter.com/.twitterlink"><img class="contact-icon" src="./twitter.png" alt="icon"></a>
+                    <a class="contact-link" href="https://in.linkedin.com/in/somebody"><img class="contact-icon" src="./n-icon.png" alt="icon"></a>
+                    <a class="contact-link" href="mailto:smb@gmail.com"><img class="contact-icon" src="./Mail_1_x2C__Envelope_1.png" alt="icon"></a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled text-center mt-5 mb-5" data-aos="flip-up" data-aos-duration="2000" style="width: 180px; margin:5px;">
+                <li><img style="width: 180px;" src="./IMAGE (2).png" alt="image"></li>
+                <li><p>Ron Swanson</p></li>
+                <li><p>Founder</p></li>
+                <li class="d-flex justify-content-center align-items-center" >
+                    <a class="contact-link" href="https://publish.twitter.com/.twitterlink"><img class="contact-icon" src="./twitter.png" alt="icon"></a>
+                    <a class="contact-link" href="https://in.linkedin.com/in/somebody"><img class="contact-icon" src="./n-icon.png" alt="icon"></a>
+                    <a class="contact-link" href="mailto:smb@gmail.com"><img class="contact-icon" src="./Mail_1_x2C__Envelope_1.png" alt="icon"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="" style="background-color: #F5F5F5;">
+        <div class="container d-flex align-items-center justify-content-center text-center">
+            <ul class="list-unstyled m-5 pe-5" data-aos="zoom-out-right" data-aos-duration="2000"  style="width: 300px; border-right: 1px solid #ABABAB;">
+                <li><p style="font-size: 18px;">“I love these guys! They did a great job. I would recommend them to anyone.”</p></li>
+                <li><img src="./IMAGE (3).png" alt="image"></li>
+                <li><p class="mt-3" style="font-size: 14px; color: #ABABAB;">Julius Von Uberstien</p></li>
+            </ul>
+
+            <ul class="list-unstyled m-5 pe-5" data-aos="zoom-out-left" data-aos-duration="2000" style="width: 300px;">
+                <li><p style="font-size: 18px;">“I love these guys! They did a great job. I would recommend them to anyone.”</p></li>
+                <li><img src="./IMAGE (3).png" alt="image"></li>
+                <li><p class="mt-3" style="font-size: 14px; color: #ABABAB;">Julius Von Uberstien</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="" style="background-image: url('./background-img.png');">
+        <div>
+
+        </div>
+        <div class="container d-flex justify-content-center ">
+            <ul class="list-unstyled p-3 m-3 text-center" data-aos="fade-down" data-aos-duration="1000">
+                <li><a href="#"><img class="address-img"src="./location.png" alt="icon"></a></li>
+                <li><p class="" style="font-size: 14px;">MEET US IN PERSON</p></li>
+                <li><p class="list-parag">8776 Juniper Street</p></li>
+                <li><p class="list-parag">Unit #204</p></li>
+                <li><p class="list-parag">Merriweather, Ontorio</p></li>
+                <li><p class="list-parag">Canada</p></li>
+            </ul>
+
+            <ul class="list-unstyled p-3 m-3 text-center" data-aos="fade-down" data-aos-duration="1500">
+                <li><a href="#"><img class="address-img"src="./e-mail.png" alt="icon"></a></li>
+                <li><p class="" style="font-size: 14px;">MEET US IN PERSON</p></li>
+                <li><p class="list-parag">EMail Us</p></li>
+                <li><p class="list-parag">contact@minimal.com</p></li>
+                <li><p class="list-parag pt-4">Contact Form</p></li>
+                <li><p class="list-parag">Scroll down</p></li>
+            </ul>
+
+            <ul class="list-unstyled p-3 m-3 text-center" data-aos="fade-down" data-aos-duration="2000">
+                <li><img class="address-img"src="./heart.png" alt="icon"></li>
+                <li><p class="" style="font-size: 14px;">MEET US IN PERSON</p></li>
+                <li>
+                    <ul class="list-unsytled ">
+                        <li class="link-item d-flex justify-content-start align-items-center"><a href=""><img class="link-icon" src="./facebook.png" alt="icon"></a><p class="icon-name">Facebook</p></li>
+                        <li class="link-item d-flex justify-content-start align-items-center"><a href=""><img class="link-icon" src="./twitter.png" alt="icon"></a><p class="icon-name">Twitter</p></li>
+                        <li class="link-item d-flex justify-content-start align-items-center"><a href=""><img class="link-icon" src="./n-icon.png" alt="icon"></a><p class="icon-name">Linkedln</p></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color: #000000;">
+        <div class="container">
+            <form class="footer-form mt-5" data-aos="fade-down" data-aos-duration="1000">
+                <div class="mb-3">
+                  <input data-aos="zoom-in" data-aos-duration="2500"  style="background-color: rgba(255, 255, 255, 0.18);" type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input data-aos="zoom-in" data-aos-duration="2800"  style="background-color: rgba(255, 255, 255, 0.18);" type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                <div class="mb-3">
+                  <input data-aos="zoom-in" data-aos-duration="3000"  style="background-color: rgba(255, 255, 255, 0.18);" type="password" class="form-control" id="exampleInputPassword1" placeholder="Budget">
+                </div>
+                <div>
+                    <textarea data-aos="zoom-in" data-aos-duration="2000" style="background-color: rgba(255, 255, 255, 0.2); width: 360px;" placeholder="Describe your project..."></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary px-5 mt-2">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
